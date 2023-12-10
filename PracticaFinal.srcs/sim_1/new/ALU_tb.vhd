@@ -54,6 +54,9 @@ component ALU is
  );
 end component; 
 
+
+
+
  signal Reset :  std_logic:='0'; -- asynnchronous, active low
  signal Clk :  std_logic; -- Sys clock, 20MHz, rising_edge
  signal u_instruction :  alu_op; -- u-instructions from CPU

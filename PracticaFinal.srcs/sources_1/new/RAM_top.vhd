@@ -33,6 +33,7 @@ SIGNAL address_e, address_g:	std_logic_vector(7 downto 0);
 SIGNAL write_en_e, write_en_g:	std_logic;
 SIGNAL oe_e, oe_g:				std_logic;
 
+
 component RAM_e 
 port (
    Clk        : in    std_logic;

@@ -4,6 +4,7 @@ USE IEEE.std_logic_1164.all;
 USE IEEE.numeric_std.all;
 USE work.PIC_pkg.all;
 
+
 entity MICRO is
 port (
     RESET       : in  std_logic;           						-- Asynchronous, active low
@@ -50,20 +51,19 @@ architecture behavior of MICRO is
   -- ALU
   ------------------------------------------------------------------------
   
-	component ALU
-    port (
-		Reset 	 	: in std_logic; 							-- asynnchronous, active low 
-		Clk 	 	: in std_logic; 							-- Sys clock, 20MHz, rising_edge 
-		Alu_op  	: in std_logic_vector(5 downto 0); 			-- u-instructions from CPU
-		
-		Databus 	: inout std_logic_vector(7 downto 0); 		-- System Databus
-		
-		Index_Reg 	: out std_logic_vector(7 downto 0);			-- Index register 
-		FlagZ 		: out std_logic; 							-- Zero flag 
-		FlagC 		: out std_logic; 							-- Carry flag 
-		FlagN 		: out std_logic; 							-- Nibble carry bit 
-		FlagE 		: out std_logic);
-	end component;
+component ALU is
+ port (
+ Reset : in std_logic; -- asynnchronous, active low
+ Clk : in std_logic; -- Sys clock, 20MHz, rising_edge
+ u_instruction : in alu_op; -- u-instructions from CPU
+ FlagZ : out std_logic; -- Zero flag
+ FlagC : out std_logic; -- Carry flag
+ FlagN : out std_logic; -- Nibble carry bit
+ FlagE : out std_logic; -- Error flag
+ Index_Reg_out : out std_logic_vector(7 downto 0); -- Index register
+ Databus : inout std_logic_vector(7 downto 0) -- System Data bus
+ );
+end component; 
   
   ------------------------------------------------------------------------
   --  CPU
@@ -83,7 +83,7 @@ architecture behavior of MICRO is
 		DMA_ACK 	: out  std_logic;
 		SEND_comm 	: out  std_logic;
 		DMA_READY 	: in  std_logic;
-		Alu_op 		: out  std_logic_vector(5 downto 0);
+		Alu_op 		: out  alu_op;
 		Index_Reg 	: in  std_logic_vector (7 downto 0);
 		FlagZ 		: in  std_logic;
 		FlagC 		: in  std_logic;
@@ -114,8 +114,8 @@ architecture behavior of MICRO is
 	SIGNAL DMA_RQ     		: std_logic;
 	SIGNAL DMA_READY      	: std_logic;
 	
-	SIGNAL Alu_op      		: std_logic_vector(5 downto 0);
-	SIGNAL Index_Reg      	: std_logic_vector(7 downto 0);
+	SIGNAL u_instruction      		: alu_op;
+	SIGNAL Index_Reg_out      	: std_logic_vector(7 downto 0);
 	SIGNAL FlagZ      		: std_logic;
 	SIGNAL FlagC      		: std_logic;
 	SIGNAL FlagN      		: std_logic;
@@ -152,9 +152,9 @@ begin  -- behavior
     port map (
         Reset 	 	=> RESET,	
 		Clk 	 	=> CLK,
-		Alu_op  	=> Alu_op,
+		u_instruction  	=> u_instruction,
 		Databus 	=> databus,
-		Index_Reg 	=> Index_Reg,
+		Index_Reg_out 	=> Index_Reg_out,
 		FlagZ 		=> FlagZ,
 		FlagC 		=> FlagC,
 		FlagN 		=> FlagN,
@@ -175,8 +175,8 @@ begin  -- behavior
 		DMA_ACK 	=> DMA_ACK,
 		SEND_comm 	=> Send_comm,
 		DMA_READY 	=> DMA_READY,
-		Alu_op 		=> Alu_op,
-		Index_Reg 	=> Index_Reg,
+		Alu_op 		=> u_instruction,
+		Index_Reg 	=> Index_Reg_out,
 		FlagZ 		=> FlagZ,
 		FlagC 		=> FlagC,
 		FlagN 		=> FlagN,

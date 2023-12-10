@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1702226369" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/RAM_RST.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1702238042" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/RAM_RST.dcp">
   <File Type="PA-TCL" Name="nexys_MICRO.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="nexys_MICRO_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="nexys_MICRO_reports.tcl"/>

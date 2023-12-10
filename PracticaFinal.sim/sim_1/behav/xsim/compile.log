@@ -3,10 +3,19 @@ INFO: [VRFC 10-311] analyzing module fifo
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/CPU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/DMA.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'DMA'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE/LCSE/PIC/MICRO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MICRO'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/RS232_test.vhd" into library xil_defaultlib
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/RAM_top.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'RAM_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE/LCSE/PIC/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ROM'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/RS232_RX.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'RS232_RX'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/RS232_TX.vhd" into library xil_defaultlib
@@ -21,5 +30,5 @@ INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE/LCSE/Prac
 INFO: [VRFC 10-3107] analyzing entity 'RAM_e'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/ram_g.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'RAM_g'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sim_1/new/DMA_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'DMA_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sim_1/new/PICtop_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PICtop_tb'
