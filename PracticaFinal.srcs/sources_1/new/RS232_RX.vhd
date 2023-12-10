@@ -55,7 +55,7 @@ begin
 
 process(clk, reset)
   variable data_count: integer:=0;
-  variable pulse_width: integer:=0;
+  variable pulse_width: integer:=0; --BitCounter
 begin
 --variable BitCounter: integer 0 to 
   if reset = '0' then
@@ -84,7 +84,7 @@ begin
       store_out<='0';
       --Counter for half bit length
       pulse_width:=pulse_width+1;
-      if pulse_width = PulseEndOfCount/2 then
+      if pulse_width = PulseEndOfCount/2 then --HalfBitCounter
         pulse_width:= 0;
         current_state <= RCV_DATA;
       end if;

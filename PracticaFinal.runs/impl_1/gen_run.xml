@@ -41,7 +41,7 @@
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../LCSE_PRACTICA2/PIC/PIC_pkg.vhd">
+    <File Path="$PPRDIR/../../LCSE_PRACTICA2/PIC/PIC_pkg.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -49,7 +49,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/ALU.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/ALU.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/ALU.vhd"/>
         <Attr Name="ImportTime" Val="1700416518"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -57,7 +57,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/CPU.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/CPU.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/CPU.vhd"/>
         <Attr Name="ImportTime" Val="1701015331"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -65,19 +65,19 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/DMA.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/DMA.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/DMA.vhd"/>
         <Attr Name="ImportTime" Val="1701545806"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../LCSE_PRACTICA2/PIC/PICtop.vhd">
+    <File Path="$PPRDIR/../../LCSE_PRACTICA2/PIC/PICtop.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../LCSE_PRACTICA2/PIC/RAM.vhd">
+    <File Path="$PPRDIR/../../LCSE_PRACTICA2/PIC/RAM.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -85,43 +85,43 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/RAM_RST.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/RAM_RST.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/RAM_RST.vhd"/>
         <Attr Name="ImportTime" Val="1701504364"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../LCSE_PRACTICA2/PIC/ROM.vhd">
+    <File Path="$PPRDIR/../../LCSE_PRACTICA2/PIC/ROM.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_RX.vhd">
+    <File Path="$PPRDIR/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_RX.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_TX.vhd">
+    <File Path="$PPRDIR/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_TX.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/imports/RS232/RS232top.vhd">
+    <File Path="$PPRDIR/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/imports/RS232/RS232top.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/ShiftRegister.vhd">
+    <File Path="$PPRDIR/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/ShiftRegister.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.vhd">
+    <File Path="$PPRDIR/../../CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -130,7 +130,7 @@
     <File Path="$PSRCDIR/sources_1/new/ram_e.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../RAUL/raul/raul.srcs/sources_1/new/ram_e.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../RAUL/raul/raul.srcs/sources_1/new/ram_e.vhd"/>
         <Attr Name="ImportTime" Val="1702128769"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -139,13 +139,13 @@
     <File Path="$PSRCDIR/sources_1/new/ram_g.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../RAUL/raul/raul.srcs/sources_1/new/ram_g.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../RAUL/raul/raul.srcs/sources_1/new/ram_g.vhd"/>
         <Attr Name="ImportTime" Val="1702128177"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../LCSE_PRACTICA2/PIC/RS232_test.vhd">
+    <File Path="$PPRDIR/../../LCSE_PRACTICA2/PIC/RS232_test.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -159,7 +159,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.xdc">
+    <File Path="$PPRDIR/../../CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -173,7 +173,7 @@
     <Filter Type="Utils"/>
     <File Path="$PSRCDIR/utils_1/imports/synth_1/RAM_RST.dcp">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/utils_1/imports/synth_1/RAM_RST.dcp"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/utils_1/imports/synth_1/RAM_RST.dcp"/>
         <Attr Name="ImportTime" Val="1701502454"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -199,6 +199,6 @@
     <Step Id="write_bitstream"/>
     <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="fifo"/>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo"/>
 </GenRun>

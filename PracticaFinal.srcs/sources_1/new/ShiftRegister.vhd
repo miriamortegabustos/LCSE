@@ -55,10 +55,12 @@ begin
   if reset = '0' then
     word:=(others=>'0');
     Q<=(others=>'0');
-  elsif rising_edge(clk) and enable= '1' then
-    word(6 downto 0):= word(7 downto 1);
-    word(7):=D;
-    Q<=word;
+  elsif rising_edge(clk)then
+	if(enable = '1')then
+		word(6 downto 0):= word(7 downto 1);
+		word(7):=D;
+		Q<=word;
+	end if;
   end if;
 end process;
 

@@ -1,4 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/10_OCTUBRE/PRACTICA1MIRIAM.gen/sources_1/ip/fifo/sim/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/LCSE/LCSE/PRACTICA1MIRIAM.gen/sources_1/ip/fifo/sim/fifo.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

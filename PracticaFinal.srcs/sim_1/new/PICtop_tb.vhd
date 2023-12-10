@@ -12,7 +12,7 @@ end PICtop_tb;
 
 architecture TestBench of PICtop_tb is
 
-  component PICtop
+  component MICRO
     port (
      Reset : in std_logic; -- Asynchronous, active low
      Clk : in std_logic; -- System clock, 20 MHz, rising_edge
@@ -40,7 +40,7 @@ architecture TestBench of PICtop_tb is
 
 begin  -- TestBench
 
-  UUT: PICtop
+  UUT: MICRO
     port map (
         Reset    => Reset,
         Clk      => Clk,

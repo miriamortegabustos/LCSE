@@ -27,12 +27,14 @@ Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
 Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_COMMON...
 Compiling module xil_defaultlib.fifo
 Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
-Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
-Compiling architecture behavioral of entity xil_defaultlib.RAM_RST [ram_rst_default]
-Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
-Compiling architecture behavioral of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM_e [ram_e_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM_g [ram_g_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM_top [ram_top_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture behavior of entity xil_defaultlib.TERNA [terna_default]
+Compiling architecture behavior of entity xil_defaultlib.ALU [alu_default]
 Compiling architecture behavioral of entity xil_defaultlib.CPU [cpu_default]
 Compiling architecture automatic of entity xil_defaultlib.ROM [rom_default]
-Compiling architecture behavior of entity xil_defaultlib.PICtop [pictop_default]
+Compiling architecture behavior of entity xil_defaultlib.MICRO [micro_default]
 Compiling architecture testbench of entity xil_defaultlib.pictop_tb
 Built simulation snapshot PICtop_tb_behav

@@ -71,15 +71,12 @@ begin
     CASE current_state IS
     WHEN IDLE =>
       --Output
-      
+      EOT<='1';
       TX<='1';
       --Start transmission
       if (start='1') then
         word <= data; --Save data input
         current_state <=START_BIT ;
-        EOT<='0';
-      else
-        EOT<='1';
       end if;
       
     WHEN START_BIT =>

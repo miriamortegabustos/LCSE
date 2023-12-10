@@ -1,45 +1,41 @@
--------------------------------------------------------------------------
--- Memoria de propósito general
--------------------------------------------------------------------------
 
--- =================================
-LIBRARY IEEE;
-USE IEEE.std_logic_1164.all;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.numeric_std.all;
 USE work.PIC_pkg.all;
--- =================================
 
--- =================================
-ENTITY ram_g IS
-    PORT (
-       Clk      : in    std_logic;
-       Reset    : in    std_logic;
-       write_en : in    std_logic;
-       oe       : in    std_logic;
-       address  : in    std_logic_vector(7 downto 0);
-       databus  : inout std_logic_vector(7 downto 0)
-       );
-END ram_g;
--- =================================
+entity RAM_g is
+ Port ( 
+   Clk      : in    std_logic;
+   Reset    : in    std_logic;
+   databus_g: inout std_logic_vector(7 downto 0);
+   address  : in std_logic_vector(7 downto 0);
+   write_en : in std_logic;
+   oe       : in std_logic);
+end RAM_g;
 
--- =================================
-ARCHITECTURE behavior OF ram_g IS
-    
-    SIGNAL contents_ram : array8_ram(255 downto 64);
+architecture Behavioral of RAM_g is
 
-    BEGIN
+SIGNAL contents_ram : array8_ram(255 downto 64);
+ 
+BEGIN
 
-    p_ram : process (clk)  -- no reset
-        begin          
-          if clk'event and clk = '1' then
-            if write_en = '1' then
-              contents_ram(to_integer(unsigned(address))) <= databus;
-            end if;
-          end if;
-    
-    end process;
+PROCESS (Clk, Reset)  -- no reset
+BEGIN
+	if Reset = '0' then 	--INICIALIZACION DE VALORES
+		-- TODO A CEROS MENOS TERMOSTATO
+		contents_ram <= (others=>(others => '0')); 
+	
+	elsif Clk'event and Clk = '1' then
+		-- ESCRITURA SINCRONA
+		if write_en = '1' then
+			contents_ram(to_integer(unsigned(address))) <= databus_g;
+		end if;
+	end if;
 
-    databus <= contents_ram(to_integer(unsigned(address))) when oe = '1' else (others => 'Z');
+END PROCESS;
 
-END behavior;
--- =================================
+-- LECTURA ASINCRONA
+databus_g <= contents_ram(to_integer(unsigned(address))) WHEN oe = '1' else (others => 'Z');
+
+end Behavioral;

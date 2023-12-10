@@ -47,7 +47,7 @@ architecture behavior of PICtop is
   end component;
   
     
-  component RAM_RST is
+  component RAM_top is
      Port ( 
        Clk      : in    std_logic;
        Reset    : in    std_logic;
@@ -200,7 +200,7 @@ begin  -- behavior
         Empty     => RX_Empty
         );
         
-  RAM_PHY: RAM_RST
+  RAM_PHY: RAM_top
     port map (
        Clk       =>clk,
        Reset     =>Reset,

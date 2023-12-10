@@ -1,22 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 26.11.2023 17:14:58
--- Design Name: 
--- Module Name: CPU - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -38,7 +19,7 @@ entity CPU is
            DMA_ACK : out  STD_LOGIC;
            SEND_comm : out  STD_LOGIC;
            DMA_READY : in  STD_LOGIC;
-           Alu_op : out  alu_op;
+           Alu_op : out  std_logic_vector(5 downto 0);
            Index_Reg : in  STD_LOGIC_VECTOR (7 downto 0);
            FlagZ : in  STD_LOGIC;
            FlagC : in  STD_LOGIC;
@@ -62,13 +43,12 @@ process(current_state, FlagZ, Index_Reg, DMA_RQ, DMA_READY, ROM_Data, PC_reg, IN
 begin
 		-- Valores por defecto
 		Databus <= "ZZZZZZZZ";
-		--RAM_Addr <= (others => '0'); -- By default, address zero of the RAM is selected.
-		RAM_Addr <= "ZZZZZZZZ"; -- By default, address zero of the RAM is selected.
+		RAM_Addr <= (others => '0'); -- By default, address zero of the RAM is selected.
 		RAM_Write <= '0'; -- By default, values are not written in the RAM. (The write enable is active high).
-		RAM_OE <= '0'; -- By default, the output of the RAM is not enabled. (The RAM OE is active low).
+		RAM_OE <= '0'; -- By default, the output of the RAM is not enabled. (The RAM OE is active low). LO CAMBIO A ACTIVO ALTO
 		DMA_Ack <= '0';
 		Send_comm <= '0';
-		ALU_op <= nop;
+		ALU_op <= "111111";
 		next_state <= current_state;
 		INS_reg_tmp <= INS_reg;
 		PC_reg_tmp <= PC_reg;
@@ -85,8 +65,6 @@ begin
 
 			when Receive =>
 				DMA_ACK<='1';
-				RAM_Write <= 'Z';
-				RAM_OE <= 'Z';
 				if DMA_RQ='0' then
 					next_state <= Fetch;
 				end if;
@@ -109,7 +87,6 @@ begin
 							next_state <= Op_Fetch;
 						end if;
 					when TYPE_4 =>
-                        SEND_comm <= '1';
 						next_state <= Transmit;
 					when others =>
 				end case;
@@ -125,29 +102,29 @@ begin
 					when TYPE_1 =>
 						case INS_reg(5 downto 0) is
 							when ALU_ADD =>
-								Alu_op <= op_add;
+								Alu_op <= "000000";
 							when ALU_SUB =>
-								Alu_op <= op_sub;
+								Alu_op <= "000001";
 							when ALU_SHIFTL =>
-								Alu_op <= op_shiftl;
+								Alu_op <= "000010";
 							when ALU_SHIFTR =>
-								Alu_op <= op_shiftr;
+								Alu_op <= "000011";
 							when ALU_AND =>
-								Alu_op <= op_and;
+								Alu_op <= "000100";
 							when ALU_OR =>
-								Alu_op <= op_or;
+								Alu_op <= "000101";
 							when ALU_XOR =>
-								Alu_op <= op_xor;
+								Alu_op <= "000110";
 							when ALU_CMPE =>
-								Alu_op <= op_cmpe;
+								Alu_op <= "000111";
 							when ALU_CMPL =>
-								Alu_op <= op_cmpl;
+								Alu_op <= "001001";
 							when ALU_CMPG =>
-								Alu_op <= op_cmpg;
+								Alu_op <= "001000";
 							when ALU_ASCII2BIN =>
-								Alu_op <= op_ascii2bin;
+								Alu_op <= "001010";
 							when ALU_BIN2ASCII =>
-								Alu_op <= op_bin2ascii;					
+								Alu_op <= "001011";					
 							when others =>
 						end case;
 						next_state <= Idle;
@@ -171,30 +148,30 @@ begin
 
 								-- Transferencias entre registros
 								when SRC_ACC & DST_A =>
-									Alu_op <= op_mvacc2a;
+									Alu_op <= "100001";
 									next_state <= Idle;
 								when SRC_ACC & DST_B =>
-									Alu_op <= op_mvacc2b;
+									Alu_op <= "100010";
 									next_state <= Idle;
 								when SRC_ACC & DST_INDX =>
-									Alu_op <= op_mvacc2id;
+									Alu_op <= "100011";
 									next_state <= Idle;
 
 								-- Carga de registros con constantes
 								when SRC_CONSTANT	& DST_A =>
-									Alu_op <= op_lda;
+									Alu_op <= "101001";
 									Databus <= TMP_reg(7 downto 0);
 									next_state <= Idle;
 								when SRC_CONSTANT	& DST_B =>
-									Alu_op <= op_ldb;
+									Alu_op <= "101010";
 									Databus <= TMP_reg(7 downto 0);
 									next_state <= Idle;
 								when SRC_CONSTANT	& DST_INDX =>
-									Alu_op <= op_ldid;
+									Alu_op <= "101011";
 									Databus <= TMP_reg(7 downto 0);
 									next_state <= Idle;
 								when SRC_CONSTANT	& DST_ACC =>
-									Alu_op <= op_ldacc;
+									Alu_op <= "101000";
 									Databus <= TMP_reg(7 downto 0);
 									next_state <= Idle;
 
@@ -203,25 +180,25 @@ begin
 									RAM_OE <= '1';
 									RAM_Write <= '0';
 									RAM_Addr <= TMP_reg(7 downto 0);
-									Alu_op <= op_lda;
+									Alu_op <= "110001";
 									next_state <= Idle;
 								when SRC_MEM & DST_B =>
 									RAM_OE <= '1';
 									RAM_Write <= '0';
 									RAM_Addr <= TMP_reg(7 downto 0);
-									Alu_op <= op_ldb;
+									Alu_op <= "110010";
 									next_state <= Idle;
 								when SRC_MEM & DST_ACC =>
 									RAM_OE <= '1';
 									RAM_Write <= '0';
 									RAM_Addr <= TMP_reg(7 downto 0);
-									Alu_op <= op_ldacc;
+									Alu_op <= "110000";
 									next_state <= Idle;
 								when SRC_MEM & DST_INDX =>
 									RAM_OE <= '1';
 									RAM_Write <= '0';
 									RAM_Addr <= TMP_reg(7 downto 0);
-									Alu_op <= op_ldid;
+									Alu_op <= "110011";
 									next_state <= Idle;
 
 								-- Carga de registros desde memoria indexada
@@ -229,32 +206,32 @@ begin
 									RAM_OE <= '1';
 									RAM_Write <= '0';
 									RAM_Addr <= TMP_reg(7 downto 0)+Index_Reg;
-									Alu_op <= op_lda;
+									Alu_op <= "111001";
 									next_state <= Idle;
 								when SRC_INDXD_MEM &	DST_B =>
 									RAM_OE <= '1';
 									RAM_Write <= '0';
 									RAM_Addr <= TMP_reg(7 downto 0)+Index_Reg;
-									Alu_op <= op_ldb;
+									Alu_op <= "111010";
 									next_state <= Idle;
 								when SRC_INDXD_MEM &	DST_ACC =>
 									RAM_OE <= '1';
 									RAM_Write <= '0';
 									RAM_Addr <= TMP_reg(7 downto 0)+Index_Reg;
-									Alu_op <= op_ldacc;
+									Alu_op <= "111000";
 									next_state <= Idle;
 								when SRC_INDXD_MEM &	DST_INDX =>
 									RAM_OE <= '1';
 									RAM_Write <= '0';
 									RAM_Addr <= TMP_reg(7 downto 0)+Index_Reg;
-									Alu_op <= op_ldid;
+									Alu_op <= "111011";
 									next_state <= Idle;
 
 								when others =>
 							end case;
 
 						else  -- Escritura en memoria
-							Alu_op <= op_oeacc;
+							Alu_op <= "100100";
 							case INS_reg(4 downto 0) is
 
 								when SRC_ACC & DST_MEM =>
@@ -277,10 +254,8 @@ begin
 				end case;
 
 			when Transmit =>
-                RAM_Write <= 'Z';
-                RAM_OE <= 'Z';
+				SEND_comm <= '1';
 				if DMA_READY='1' then
-				    --Send_comm <= '0';
 					next_state <= Idle;
 				end if;				
 
