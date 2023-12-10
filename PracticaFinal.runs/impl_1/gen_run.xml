@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1702140253">
+  <File Type="PA-TCL" Name="nexys_PIC.tcl"/>
+  <File Type="REPORTS-TCL" Name="nexys_PIC_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="nexys_PIC.msk"/>
+  <File Type="RDI-RDI" Name="nexys_PIC.vdi"/>
+  <File Type="BG-BIT" Name="nexys_PIC.bit"/>
+  <File Type="BG-DRC" Name="nexys_PIC.drc"/>
+  <File Type="BG-BGN" Name="nexys_PIC.bgn"/>
+  <File Type="BG-BIN" Name="nexys_PIC.bin"/>
+  <File Type="BITSTR-RBT" Name="nexys_PIC.rbt"/>
+  <File Type="BITSTR-NKY" Name="nexys_PIC.nky"/>
+  <File Type="BITSTR-BMM" Name="nexys_PIC_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="nexys_PIC.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="nexys_PIC.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="nexys_PIC.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="nexys_PIC.hwdef"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="nexys_PIC_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="nexys_PIC_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="nexys_PIC_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="nexys_PIC_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="nexys_PIC_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="nexys_PIC_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="nexys_PIC_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="nexys_PIC_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="nexys_PIC_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="nexys_PIC_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="nexys_PIC_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="nexys_PIC_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="nexys_PIC.pdi"/>
+  <File Type="RCFI_FILE" Name="nexys_PIC.rcfi"/>
+  <File Type="CFI_FILE" Name="nexys_PIC.cfi"/>
+  <File Type="RNPI_FILE" Name="nexys_PIC.rnpi"/>
+  <File Type="NPI_FILE" Name="nexys_PIC.npi"/>
+  <File Type="RBD_FILE" Name="nexys_PIC.rbd"/>
+  <File Type="ROUTE-RQS" Name="nexys_PIC_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="nexys_PIC_postroute_physopted.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../LCSE_PRACTICA2/PIC/PIC_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/ALU.vhd"/>
+        <Attr Name="ImportTime" Val="1700416518"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CPU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/CPU.vhd"/>
+        <Attr Name="ImportTime" Val="1701015331"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DMA.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/DMA.vhd"/>
+        <Attr Name="ImportTime" Val="1701545806"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LCSE_PRACTICA2/PIC/PICtop.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LCSE_PRACTICA2/PIC/RAM.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RAM_RST.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/RAM_RST.vhd"/>
+        <Attr Name="ImportTime" Val="1701504364"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LCSE_PRACTICA2/PIC/ROM.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_RX.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_TX.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/imports/RS232/RS232top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/ShiftRegister.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ram_e.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RAUL/raul/raul.srcs/sources_1/new/ram_e.vhd"/>
+        <Attr Name="ImportTime" Val="1702128769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ram_g.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RAUL/raul/raul.srcs/sources_1/new/ram_g.vhd"/>
+        <Attr Name="ImportTime" Val="1702128177"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LCSE_PRACTICA2/PIC/RS232_test.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="nexys_PIC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/RAM_RST.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/utils_1/imports/synth_1/RAM_RST.dcp"/>
+        <Attr Name="ImportTime" Val="1701502454"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

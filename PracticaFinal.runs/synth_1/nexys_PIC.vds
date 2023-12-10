@@ -1,0 +1,494 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Dec  9 17:44:15 2023
+# Process ID: 10848
+# Current directory: C:/Users/Usuario/Desktop/RAUL/raul/raul.runs/synth_1
+# Command line: vivado.exe -log nexys_PIC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nexys_PIC.tcl
+# Log file: C:/Users/Usuario/Desktop/RAUL/raul/raul.runs/synth_1/nexys_PIC.vds
+# Journal file: C:/Users/Usuario/Desktop/RAUL/raul/raul.runs/synth_1\vivado.jou
+# Running On: DESKTOP-8NP5GKR, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 8358 MB
+#-----------------------------------------------------------
+source nexys_PIC.tcl -notrace
+Command: synth_design -top nexys_PIC -part xc7a100tcsg324-1 -incremental_mode off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3652
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1232.418 ; gain = 407.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nexys_PIC' [C:/Users/Usuario/Desktop/CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.vhd:51]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Usuario/Desktop/RAUL/raul/raul.runs/synth_1/.Xil/Vivado-10848-DESKTOP-8NP5GKR/realtime/clk_wiz_0_stub.v:5' bound to instance 'clk_20MHz' of component 'clk_wiz_0' [C:/Users/Usuario/Desktop/CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.vhd:116]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Usuario/Desktop/RAUL/raul/raul.runs/synth_1/.Xil/Vivado-10848-DESKTOP-8NP5GKR/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/Usuario/Desktop/RAUL/raul/raul.runs/synth_1/.Xil/Vivado-10848-DESKTOP-8NP5GKR/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-3491] module 'PICtop' declared at 'C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PICtop.vhd:8' bound to instance 'UUT' of component 'PICtop' [C:/Users/Usuario/Desktop/CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'PICtop' [C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PICtop.vhd:30]
+INFO: [Synth 8-3491] module 'RS232top' declared at 'C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/imports/RS232/RS232top.vhd:6' bound to instance 'RS232_PHY' of component 'RS232top' [C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PICtop.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'RS232top' [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/imports/RS232/RS232top.vhd:26]
+INFO: [Synth 8-3491] module 'RS232_TX' declared at 'C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_TX.vhd:34' bound to instance 'Transmitter' of component 'RS232_TX' [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/imports/RS232/RS232top.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'RS232_TX' [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_TX.vhd:50]
+INFO: [Synth 8-226] default block is never used [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_TX.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'RS232_TX' (0#1) [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_TX.vhd:50]
+INFO: [Synth 8-3491] module 'RS232_RX' declared at 'C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_RX.vhd:34' bound to instance 'Receiver' of component 'RS232_RX' [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/imports/RS232/RS232top.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'RS232_RX' [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_RX.vhd:50]
+INFO: [Synth 8-226] default block is never used [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_RX.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'RS232_RX' (0#1) [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_RX.vhd:50]
+INFO: [Synth 8-3491] module 'ShiftRegister' declared at 'C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/ShiftRegister.vhd:34' bound to instance 'Shift' of component 'ShiftRegister' [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/imports/RS232/RS232top.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'ShiftRegister' [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/ShiftRegister.vhd:48]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/ShiftRegister.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'ShiftRegister' (0#1) [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/ShiftRegister.vhd:48]
+INFO: [Synth 8-3491] module 'fifo' declared at 'C:/Users/Usuario/Desktop/RAUL/raul/raul.runs/synth_1/.Xil/Vivado-10848-DESKTOP-8NP5GKR/realtime/fifo_stub.v:5' bound to instance 'Internal_memory' of component 'fifo' [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/imports/RS232/RS232top.vhd:123]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [C:/Users/Usuario/Desktop/RAUL/raul/raul.runs/synth_1/.Xil/Vivado-10848-DESKTOP-8NP5GKR/realtime/fifo_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (0#1) [C:/Users/Usuario/Desktop/RAUL/raul/raul.runs/synth_1/.Xil/Vivado-10848-DESKTOP-8NP5GKR/realtime/fifo_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'RS232top' (0#1) [C:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/imports/RS232/RS232top.vhd:26]
+INFO: [Synth 8-3491] module 'RAM_RST' declared at 'C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/RAM_RST.vhd:37' bound to instance 'RAM_PHY' of component 'RAM_RST' [C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PICtop.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'RAM_RST' [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/RAM_RST.vhd:52]
+INFO: [Synth 8-3491] module 'ram' declared at 'C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/RAM.vhd:8' bound to instance 'ram_PHY' of component 'ram' [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/RAM_RST.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'ram' [C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/RAM.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ram' (0#1) [C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/RAM.vhd:18]
+WARNING: [Synth 8-614] signal 'contents_ram' is read in the process but is not in the sensitivity list [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/RAM_RST.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'RAM_RST' (0#1) [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/RAM_RST.vhd:52]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/ALU.vhd:37' bound to instance 'ALU_PHY' of component 'ALU' [C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PICtop.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/ALU.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (0#1) [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/ALU.vhd:51]
+INFO: [Synth 8-3491] module 'DMA' declared at 'C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/DMA.vhd:39' bound to instance 'DMA_PHY' of component 'DMA' [C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PICtop.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'DMA' [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/DMA.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'DMA' (0#1) [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/DMA.vhd:65]
+INFO: [Synth 8-3491] module 'CPU' declared at 'C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/CPU.vhd:28' bound to instance 'CPU_PHY' of component 'CPU' [C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PICtop.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'CPU' [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/CPU.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/CPU.vhd:100]
+INFO: [Synth 8-226] default block is never used [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/CPU.vhd:123]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (0#1) [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/CPU.vhd:49]
+INFO: [Synth 8-3491] module 'ROM' declared at 'C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/ROM.vhd:15' bound to instance 'ROM_PHY' of component 'ROM' [C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PICtop.vhd:281]
+INFO: [Synth 8-638] synthesizing module 'ROM' [C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/ROM.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (0#1) [C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/ROM.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'PICtop' (0#1) [C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PICtop.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'nexys_PIC' (0#1) [C:/Users/Usuario/Desktop/CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.vhd:51]
+WARNING: [Synth 8-3917] design nexys_PIC has port AN[7] driven by constant 1
+WARNING: [Synth 8-3917] design nexys_PIC has port AN[6] driven by constant 1
+WARNING: [Synth 8-3917] design nexys_PIC has port AN[5] driven by constant 1
+WARNING: [Synth 8-3917] design nexys_PIC has port AN[4] driven by constant 1
+WARNING: [Synth 8-3917] design nexys_PIC has port AN[3] driven by constant 1
+WARNING: [Synth 8-3917] design nexys_PIC has port AN[2] driven by constant 1
+WARNING: [Synth 8-7129] Port ROM_Data[11] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROM_Data[10] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROM_Data[9] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROM_Data[8] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FlagC in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FlagN in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FlagE in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_Full in module DMA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[7] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[6] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[5] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[4] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[3] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[2] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[1] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[0] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BTNC in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BTNL in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BTNR in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[15] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[5] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[4] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[3] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[2] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[1] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[0] in module nexys_PIC is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1345.980 ; gain = 520.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1345.980 ; gain = 520.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1345.980 ; gain = 520.965
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1345.980 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.gen/sources_1/ip/fifo/fifo/fifo_in_context.xdc] for cell 'UUT/RS232_PHY/Internal_memory'
+Finished Parsing XDC File [c:/Users/Usuario/Desktop/LCSE/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.gen/sources_1/ip/fifo/fifo/fifo_in_context.xdc] for cell 'UUT/RS232_PHY/Internal_memory'
+Parsing XDC File [c:/Users/Usuario/Desktop/RAUL/raul/raul.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_20MHz'
+Finished Parsing XDC File [c:/Users/Usuario/Desktop/RAUL/raul/raul.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_20MHz'
+Parsing XDC File [C:/Users/Usuario/Desktop/CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.xdc]
+Finished Parsing XDC File [C:/Users/Usuario/Desktop/CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Usuario/Desktop/CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nexys_PIC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nexys_PIC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1451.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1451.773 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/Usuario/Desktop/RAUL/raul/raul.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/Usuario/Desktop/RAUL/raul/raul.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for UUT/RS232_PHY/Internal_memory. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_20MHz. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'RS232_TX'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'RS232_RX'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DMA'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'CPU'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+               start_bit |                               01 |                               01
+               send_data |                               10 |                               10
+                stop_bit |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'RS232_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+               start_bit |                               01 |                               01
+                rcv_data |                               10 |                               10
+                stop_bit |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'RS232_RX'
+WARNING: [Synth 8-327] inferring latch for variable 'databus_reg' [C:/Users/Usuario/Desktop/RAUL/raul/raul.srcs/sources_1/new/RAM_RST.vhd:75]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                          0000001 |                              000
+             wait_ack_rx |                          0000010 |                              001
+              receive_rx |                          0000100 |                              010
+                 save_rx |                          0001000 |                              011
+                 read_tx |                          0010000 |                              101
+             transmit_tx |                          0100000 |                              110
+                 wait_tx |                          1000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'DMA'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                 receive |                              001 |                              101
+                   fetch |                              010 |                              001
+                  decode |                              011 |                              011
+                op_fetch |                              100 |                              010
+                 execute |                              101 |                              100
+                transmit |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'CPU'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   3 Input    5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 75    
+	                1 Bit    Registers := 16    
++---RAMs : 
+	               1K Bit	(192 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 10    
+	   4 Input   32 Bit        Muxes := 3     
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 12    
+	  22 Input    8 Bit        Muxes := 2     
+	   7 Input    8 Bit        Muxes := 7     
+	   4 Input    8 Bit        Muxes := 3     
+	 226 Input    8 Bit        Muxes := 1     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 1     
+	  16 Input    5 Bit        Muxes := 1     
+	   7 Input    5 Bit        Muxes := 1     
+	  16 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 93    
+	   4 Input    1 Bit        Muxes := 15    
+	  22 Input    1 Bit        Muxes := 6     
+	   7 Input    1 Bit        Muxes := 21    
+	  16 Input    1 Bit        Muxes := 2     
+	  17 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design nexys_PIC has port AN[7] driven by constant 1
+WARNING: [Synth 8-3917] design nexys_PIC has port AN[6] driven by constant 1
+WARNING: [Synth 8-3917] design nexys_PIC has port AN[5] driven by constant 1
+WARNING: [Synth 8-3917] design nexys_PIC has port AN[4] driven by constant 1
+WARNING: [Synth 8-3917] design nexys_PIC has port AN[3] driven by constant 1
+WARNING: [Synth 8-3917] design nexys_PIC has port AN[2] driven by constant 1
+WARNING: [Synth 8-7129] Port ROM_Data[11] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROM_Data[10] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROM_Data[9] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROM_Data[8] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FlagC in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FlagN in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FlagE in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_Full in module DMA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[7] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[6] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[5] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[4] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[3] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[2] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[1] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[0] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BTNC in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BTNL in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BTNR in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[15] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[5] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[4] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[3] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[2] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[1] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[0] in module nexys_PIC is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (UUT/RAM_PHY/databus_reg[3]) is unused and will be removed from module nexys_PIC.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+---------------------+---------------+----------------+
+|Module Name | RTL Object          | Depth x Width | Implemented As | 
++------------+---------------------+---------------+----------------+
+|ALU         | FlagZ               | 32x1          | LUT            | 
+|ALU         | reg_acc             | 32x1          | LUT            | 
+|ALU         | reg_acc             | 32x1          | LUT            | 
+|ALU         | FlagZ               | 32x1          | LUT            | 
+|PICtop      | ROM_PHY/Instruction | 256x8         | LUT            | 
++------------+---------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+--------------------------------------+-----------+----------------------+-----------------------------+
+|Module Name | RTL Object                           | Inference | Size (Depth x Width) | Primitives                  | 
++------------+--------------------------------------+-----------+----------------------+-----------------------------+
+|nexys_PIC   | UUT/RAM_PHY/ram_PHY/contents_ram_reg | Implied   | 256 x 8              | RAM64X1S x 8 RAM128X1S x 8  | 
++------------+--------------------------------------+-----------+----------------------+-----------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:35 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:38 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+--------------------------------------+-----------+----------------------+-----------------------------+
+|Module Name | RTL Object                           | Inference | Size (Depth x Width) | Primitives                  | 
++------------+--------------------------------------+-----------+----------------------+-----------------------------+
+|nexys_PIC   | UUT/RAM_PHY/ram_PHY/contents_ram_reg | Implied   | 256 x 8              | RAM64X1S x 8 RAM128X1S x 8  | 
++------------+--------------------------------------+-----------+----------------------+-----------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:39 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:43 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:43 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:43 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:43 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:43 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:43 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |fifo          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz   |     1|
+|2     |fifo      |     1|
+|3     |CARRY4    |    65|
+|4     |LUT1      |     4|
+|5     |LUT2      |   106|
+|6     |LUT3      |    64|
+|7     |LUT4      |   130|
+|8     |LUT5      |   151|
+|9     |LUT6      |   400|
+|10    |MUXF7     |    27|
+|11    |MUXF8     |    12|
+|12    |RAM128X1S |     8|
+|13    |RAM64X1S  |     8|
+|14    |FDCE      |   746|
+|15    |FDPE      |     8|
+|16    |FDRE      |    84|
+|17    |FDSE      |     8|
+|18    |IBUF      |     2|
+|19    |OBUF      |    25|
+|20    |OBUFT     |     8|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:43 . Memory (MB): peak = 1451.773 ; gain = 626.758
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 44 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:40 . Memory (MB): peak = 1451.773 ; gain = 520.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:43 . Memory (MB): peak = 1451.773 ; gain = 626.758
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1451.773 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 120 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1451.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+Synth Design complete, checksum: 6e31f32b
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 87 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:48 . Memory (MB): peak = 1451.773 ; gain = 1023.609
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Usuario/Desktop/RAUL/raul/raul.runs/synth_1/nexys_PIC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file nexys_PIC_utilization_synth.rpt -pb nexys_PIC_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  9 17:45:14 2023...

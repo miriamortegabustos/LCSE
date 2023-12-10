@@ -1,0 +1,20 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Usuario/Desktop/10_OCTUBRE/PIC/PICtop.vhd,1702144529,vhdl,,,,pictop,,,,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PIC/RAM.vhd,1702138350,vhdl,,,,ram,,,,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PIC/ROM.vhd,1702138307,vhdl,,,,rom,,,,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PRACTICA1MIRIAM.gen/sources_1/ip/fifo/sim/fifo.v,1702216665,verilog,,,,fifo,,,../../../../PracticaFinal.gen/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sim_1/new/PICtop_tb.vhd,1702122727,vhdl,,,,pictop_tb,,,,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sources_1/RS232/RS232top.vhd,1702144785,vhdl,,,,rs232top,,,,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sources_1/new/ALU.vhd,1702121752,vhdl,,,,alu,,,,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sources_1/new/CPU.vhd,1701600014,vhdl,,,,cpu,,,,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sources_1/new/DMA.vhd,1701596727,vhdl,,,,dma,,,,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sources_1/new/RAM_RST.vhd,1702140208,vhdl,,,,ram_rst,,,,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sources_1/new/RS232_RX.vhd,1696674395,vhdl,,,,rs232_rx,,,,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sources_1/new/RS232_TX.vhd,1702144806,vhdl,,,,rs232_tx,,,,,,,,
+C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sources_1/new/ShiftRegister.vhd,1702144797,vhdl,,,,shiftregister,,,,,,,,
+C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PIC_pkg.vhd,1700327971,vhdl,C:/Users/Usuario/Desktop/10_OCTUBRE/PIC/PICtop.vhd;C:/Users/Usuario/Desktop/10_OCTUBRE/PIC/RAM.vhd;C:/Users/Usuario/Desktop/10_OCTUBRE/PIC/ROM.vhd;C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sim_1/new/PICtop_tb.vhd;C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sources_1/new/ALU.vhd;C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sources_1/new/CPU.vhd;C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sources_1/new/DMA.vhd;C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sources_1/new/RAM_RST.vhd,,,pic_pkg,,,,,,,,
+C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/RS232_test.vhd,1696952689,vhdl,C:/Users/Usuario/Desktop/10_OCTUBRE/PracticaFinal.srcs/sim_1/new/PICtop_tb.vhd,,,rs232_test,,,,,,,,
