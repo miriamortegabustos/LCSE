@@ -25,7 +25,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log nexys_PIC.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source nexys_PIC.tcl -notrace" );
+         "-log nexys_MICRO.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source nexys_MICRO.tcl -notrace" );
 
 
 

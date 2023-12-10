@@ -1,46 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1702140253">
-  <File Type="PA-TCL" Name="nexys_PIC.tcl"/>
-  <File Type="REPORTS-TCL" Name="nexys_PIC_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="nexys_PIC.msk"/>
-  <File Type="RDI-RDI" Name="nexys_PIC.vdi"/>
-  <File Type="BG-BIT" Name="nexys_PIC.bit"/>
-  <File Type="BG-DRC" Name="nexys_PIC.drc"/>
-  <File Type="BG-BGN" Name="nexys_PIC.bgn"/>
-  <File Type="BG-BIN" Name="nexys_PIC.bin"/>
-  <File Type="BITSTR-RBT" Name="nexys_PIC.rbt"/>
-  <File Type="BITSTR-NKY" Name="nexys_PIC.nky"/>
-  <File Type="BITSTR-BMM" Name="nexys_PIC_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="nexys_PIC.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="nexys_PIC.sysdef"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1702226369">
+  <File Type="ROUTE-PWR" Name="nexys_MICRO_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="nexys_MICRO.tcl"/>
+  <File Type="BITSTR-MMI" Name="nexys_MICRO.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="nexys_MICRO_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="nexys_MICRO_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="nexys_MICRO_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="nexys_MICRO_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="nexys_MICRO_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="nexys_MICRO_opt.dcp"/>
+  <File Type="OPT-DRC" Name="nexys_MICRO_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="nexys_MICRO.hwdef"/>
+  <File Type="PWROPT-DCP" Name="nexys_MICRO_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="nexys_MICRO_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="nexys_MICRO_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="nexys_MICRO_placed.dcp"/>
+  <File Type="PLACE-IO" Name="nexys_MICRO_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="nexys_MICRO_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="nexys_MICRO_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="nexys_MICRO_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="nexys_MICRO_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="nexys_MICRO_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="nexys_MICRO_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="nexys_MICRO.bin"/>
+  <File Type="PLACE-TIMING" Name="nexys_MICRO_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="nexys_MICRO_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="nexys_MICRO.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="nexys_MICRO_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="nexys_MICRO_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="nexys_MICRO_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="nexys_MICRO.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="nexys_MICRO_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="nexys_MICRO_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="nexys_MICRO_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="nexys_MICRO_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="nexys_MICRO_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="nexys_MICRO_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="nexys_MICRO_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="nexys_MICRO_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="nexys_MICRO_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="nexys_MICRO_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="nexys_MICRO_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="nexys_MICRO_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="nexys_MICRO_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="nexys_MICRO_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="nexys_MICRO_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="nexys_MICRO_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="nexys_MICRO_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="nexys_MICRO_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="nexys_MICRO_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="nexys_MICRO_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="nexys_MICRO_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="nexys_MICRO_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="nexys_MICRO_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="nexys_MICRO_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="nexys_MICRO_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="nexys_MICRO_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="nexys_MICRO_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="nexys_MICRO.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="nexys_MICRO_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="nexys_MICRO_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="nexys_MICRO.nky"/>
+  <File Type="BITSTR-BMM" Name="nexys_MICRO_bd.bmm"/>
+  <File Type="PDI-FILE" Name="nexys_MICRO.pdi"/>
+  <File Type="RCFI_FILE" Name="nexys_MICRO.rcfi"/>
+  <File Type="CFI_FILE" Name="nexys_MICRO.cfi"/>
+  <File Type="RNPI_FILE" Name="nexys_MICRO.rnpi"/>
+  <File Type="NPI_FILE" Name="nexys_MICRO.npi"/>
+  <File Type="RBD_FILE" Name="nexys_MICRO.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="nexys_PIC.ltx"/>
+  <File Type="BITSTR-LTX" Name="nexys_MICRO.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="nexys_MICRO.sysdef"/>
+  <File Type="BG-BGN" Name="nexys_MICRO.bgn"/>
+  <File Type="BG-DRC" Name="nexys_MICRO.drc"/>
+  <File Type="RDI-RDI" Name="nexys_MICRO.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-HWDEF" Name="nexys_PIC.hwdef"/>
+  <File Type="ROUTE-RQS" Name="nexys_MICRO_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="nexys_MICRO_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="nexys_PIC_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DCP" Name="nexys_PIC_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="nexys_PIC_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="nexys_PIC_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMING-PB" Name="nexys_PIC_timing_summary_routed.pb"/>
-  <File Type="OPT-DCP" Name="nexys_PIC_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="nexys_PIC_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="nexys_PIC_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="nexys_PIC_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="nexys_PIC_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="nexys_PIC_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="nexys_PIC_postroute_physopt_bb.dcp"/>
-  <File Type="PDI-FILE" Name="nexys_PIC.pdi"/>
-  <File Type="RCFI_FILE" Name="nexys_PIC.rcfi"/>
-  <File Type="CFI_FILE" Name="nexys_PIC.cfi"/>
-  <File Type="RNPI_FILE" Name="nexys_PIC.rnpi"/>
-  <File Type="NPI_FILE" Name="nexys_PIC.npi"/>
-  <File Type="RBD_FILE" Name="nexys_PIC.rbd"/>
-  <File Type="ROUTE-RQS" Name="nexys_PIC_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="nexys_PIC_postroute_physopted.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/fifo/fifo.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../../LCSE_PRACTICA2/PIC/PIC_pkg.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -49,79 +96,71 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/ALU.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/ALU.vhd"/>
-        <Attr Name="ImportTime" Val="1700416518"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/CPU.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/CPU.vhd"/>
-        <Attr Name="ImportTime" Val="1701015331"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/DMA.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/DMA.vhd"/>
-        <Attr Name="ImportTime" Val="1701545806"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../LCSE_PRACTICA2/PIC/PICtop.vhd">
+    <File Path="$PPRDIR/PIC/MICRO.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../LCSE_PRACTICA2/PIC/RAM.vhd">
+    <File Path="$PSRCDIR/sources_1/new/RAM_top.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/RAM_RST.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sources_1/new/RAM_RST.vhd"/>
-        <Attr Name="ImportTime" Val="1701504364"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../../LCSE_PRACTICA2/PIC/ROM.vhd">
+    <File Path="$PPRDIR/PIC/ROM.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_RX.vhd">
+    <File Path="$PSRCDIR/sources_1/new/RS232_RX.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/RS232_TX.vhd">
+    <File Path="$PSRCDIR/sources_1/new/RS232_TX.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/imports/RS232/RS232top.vhd">
+    <File Path="$PSRCDIR/sources_1/RS232/RS232top.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/new/ShiftRegister.vhd">
+    <File Path="$PSRCDIR/sources_1/new/ShiftRegister.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.vhd">
+    <File Path="$PSRCDIR/sources_1/new/TERNA.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/btn_driver.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -129,18 +168,32 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/ram_e.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../RAUL/raul/raul.srcs/sources_1/new/ram_e.vhd"/>
-        <Attr Name="ImportTime" Val="1702128769"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/ram_g.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Nexys_MICRO.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/PIC/RAM.vhd">
+      <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../RAUL/raul/raul.srcs/sources_1/new/ram_g.vhd"/>
-        <Attr Name="ImportTime" Val="1702128177"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RAM_RST.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -154,12 +207,12 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="nexys_PIC"/>
+      <Option Name="TopModule" Val="nexys_MICRO"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../CPUmodificada - sinCICLOSDELTA/Nexys_COMPLETE.xdc">
+    <File Path="$PPRDIR/Nexys_MICRO.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -197,8 +250,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="fifo"/>
 </GenRun>

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Usuario/Desktop/RAUL/raul/raul.runs/impl_1'
+HD_PWD='C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log nexys_PIC.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source nexys_PIC.tcl -notrace
+EAStep vivado -log nexys_MICRO.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source nexys_MICRO.tcl -notrace
 
 

@@ -2,14 +2,10 @@
 2020.2
 Oct 14 2022
 05:20:55
-C:/Users/Usuario/Desktop/LCSE/LCSE/PIC/MICRO.vhd,1702144302,vhdl,,,,micro,,,,,,,,
-C:/Users/Usuario/Desktop/LCSE/LCSE/PIC/ROM.vhd,1702144302,vhdl,,,,rom,,,,,,,,
 C:/Users/Usuario/Desktop/LCSE/LCSE/PRACTICA1MIRIAM.gen/sources_1/ip/fifo/sim/fifo.v,1702216665,verilog,,,,fifo,,,../../../../PracticaFinal.gen/sources_1/ip/clk_wiz_0,,,,,
 C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
-C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sim_1/new/PICtop_tb.vhd,1702224282,vhdl,,,,pictop_tb,,,,,,,,
+C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sim_1/new/DMA_tb.vhd,1702228960,vhdl,,,,dma_tb,,,,,,,,
 C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/RS232/RS232top.vhd,1702144785,vhdl,,,,rs232top,,,,,,,,
-C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/ALU.vhd,1702144302,vhdl,,,,alu,,,,,,,,
-C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/CPU.vhd,1702144302,vhdl,,,,cpu,,,,,,,,
 C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/DMA.vhd,1702144302,vhdl,,,,dma,,,,,,,,
 C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/RAM_top.vhd,1702144302,vhdl,,,,ram_top,,,,,,,,
 C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/RS232_RX.vhd,1702144302,vhdl,,,,rs232_rx,,,,,,,,
@@ -18,5 +14,4 @@ C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/ShiftRegiste
 C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/TERNA.vhd,1702144303,vhdl,,,,terna,,,,,,,,
 C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/ram_e.vhd,1702144302,vhdl,,,,ram_e,,,,,,,,
 C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/ram_g.vhd,1702144302,vhdl,,,,ram_g,,,,,,,,
-C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PIC_pkg.vhd,1700327971,vhdl,C:/Users/Usuario/Desktop/LCSE/LCSE/PIC/MICRO.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PIC/ROM.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sim_1/new/PICtop_tb.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/ALU.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/CPU.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/DMA.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/RAM_top.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/TERNA.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/ram_e.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/ram_g.vhd,,,pic_pkg,,,,,,,,
-C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/RS232_test.vhd,1696952689,vhdl,C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sim_1/new/PICtop_tb.vhd,,,rs232_test,,,,,,,,
+C:/Users/Usuario/Desktop/LCSE_PRACTICA2/PIC/PIC_pkg.vhd,1700327971,vhdl,C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sim_1/new/DMA_tb.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/DMA.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/RAM_top.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/TERNA.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/ram_e.vhd;C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.srcs/sources_1/new/ram_g.vhd,,,pic_pkg,,,,,,,,

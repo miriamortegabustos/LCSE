@@ -40,7 +40,7 @@ end RAM_RST_tb;
 
 architecture Behavioral of RAM_RST_tb is
 
-component RAM_RST is
+component RAM_top is
   Port ( 
    Clk      : in    std_logic;
    Reset    : in    std_logic;
@@ -67,7 +67,7 @@ end component;
     constant Tclk: time := 50 ns;  -- Clock Period 
   
 begin
- UUT: RAM_RST port map (
+ UUT: RAM_top port map (
    Clk      =>Clk,
    Reset    =>Reset,
    databus  =>databus,
@@ -91,9 +91,9 @@ begin
   p_reset : PROCESS
   BEGIN
   
-      reset <= '1';
-      wait for 100 ns;
       reset <= '0';
+      wait for 100 ns;
+      reset <= '1';
       wait for 100 ns;
       
      oe <= '0';
@@ -137,9 +137,9 @@ begin
       oe <= '0';
       wait for 400 ns;
       
-      reset <= '1';
-      wait for 100 ns;
       reset <= '0';
+      wait for 100 ns;
+      reset <= '1';
       wait for 400 ns;
       
       oe <= '1'; 

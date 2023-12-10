@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log nexys_PIC.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source nexys_PIC.tcl" );
+         "-log nexys_MICRO.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source nexys_MICRO.tcl" );
 
 
 

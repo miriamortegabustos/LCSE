@@ -57,7 +57,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="436"/>
+    <Option Name="WTXSimLaunchSim" Val="454"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -101,18 +101,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/ALU.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/CPU.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/DMA.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -120,12 +108,6 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/RAM_top.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/PIC/ROM.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -155,12 +137,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/TERNA.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/ram_e.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -173,17 +149,51 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/PIC/MICRO.vhd">
+      <File Path="$PSRCDIR/sources_1/new/TERNA.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/PRACTICA1MIRIAM/PRACTICA1MIRIAM/PRACTICA1MIRIAM.srcs/sources_1/ip/fifo/fifo.xci">
+      <File Path="$PSRCDIR/sources_1/new/ALU.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/CPU.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/PIC/MICRO.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/PIC/ROM.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/btn_driver.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/Nexys_MICRO.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -201,13 +211,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/btn_driver.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PPRDIR/../../LCSE_PRACTICA2/PIC/RS232_test.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -217,13 +220,13 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="MICRO"/>
+        <Option Name="TopModule" Val="TERNA"/>
         <Option Name="dataflowViewerSettings" Val="min_width=16"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/Nexys_COMPLETE.xdc">
+      <File Path="$PPRDIR/Nexys_MICRO.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -235,10 +238,10 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sim_1/new/PICtop_tb.vhd">
+      <File Path="$PSRCDIR/sim_1/new/DMA_tb.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sim_1/new/PICtop_tb.vhd"/>
-          <Attr Name="ImportTime" Val="1701506444"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sim_1/new/DMA_tb.vhd"/>
+          <Attr Name="ImportTime" Val="1701546910"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -252,11 +255,11 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/new/DMA_tb.vhd">
+      <File Path="$PSRCDIR/sim_1/new/PICtop_tb.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sim_1/new/DMA_tb.vhd"/>
-          <Attr Name="ImportTime" Val="1701546910"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../LCSE_PRACTICA2/PRACTICA2MIRIAM/PRACTICA2MIRIAM.srcs/sim_1/new/PICtop_tb.vhd"/>
+          <Attr Name="ImportTime" Val="1701506444"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -294,9 +297,20 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/RAM_tb.wcfg">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/DMA_tb_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="PICtop_tb"/>
+        <Option Name="TopModule" Val="DMA_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
@@ -311,6 +325,8 @@
         <Option Name="XSimWcfgFile" Val="$PPRDIR/../../CPUmodificada - sinCICLOSDELTA/PICtop_tb_behav.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/../../SIMULACIONTB_PRACTICA2/DMA_tb_behav.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/PIC_final.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/RAM_tb.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/DMA_tb_behav.wcfg"/>
         <Option Name="Incremental" Val="0"/>
         <Option Name="xsim.simulate.runtime" Val="800us"/>
       </Config>

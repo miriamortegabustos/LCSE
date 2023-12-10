@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Usuario/Desktop/RAUL/raul/raul.runs/synth_1'
+HD_PWD='C:/Users/Usuario/Desktop/LCSE/LCSE/PracticaFinal.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log nexys_PIC.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source nexys_PIC.tcl
+EAStep vivado -log nexys_MICRO.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source nexys_MICRO.tcl
